@@ -21,9 +21,9 @@ Watch the Project Demo on LinkedIn - https://lnkd.in/p/ggz4GfwV
 
 The application follows a Retrieval-Augmented Generation (RAG) pipeline to answer questions using information from the uploaded PDF.
 
-<escape>
+
 PDF Upload → Text Extraction → Text Chunking → Embeddings → FAISS Retrieval → Gemini LLM → Answer
-</escape>
+
 <br>
 
 1. **Upload PDF:** The user uploads a document.
