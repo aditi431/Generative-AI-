@@ -65,10 +65,6 @@ Building this project gave me practical experience with:
 - Building interactive AI applications with Streamlit
 - Debugging errors and connecting different components into one working pipeline
 
-## Project Demo
-
-[Watch the Project Demo on LinkedIn](https://lnkd.in/p/ggz4GfwV)
-
 ## Future Scope
 
 I plan to explore more advanced RAG systems, improve answer quality, and build AI agents and LLM-powered applications that solve real-world problems.
