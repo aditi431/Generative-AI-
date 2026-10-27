@@ -8,6 +8,8 @@ This project is being built step by step to understand how **Retrieval-Augmented
 
 https://github.com/aditi431/Generative-AI-/issues/1#issue-6058779028
 
+https://lnkd.in/p/ggz4GfwV
+
 > 🚧 **Project Status:** In Development — Day 1
 
 ## 🎯 Project Goal
