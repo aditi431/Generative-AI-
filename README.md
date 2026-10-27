@@ -23,9 +23,7 @@ The application follows a Retrieval-Augmented Generation (RAG) pipeline to answe
 
 
 PDF Upload → Text Extraction → Text Chunking → Embeddings → FAISS Retrieval → Gemini LLM → Answer
-
 <br>
-
 1. **Upload PDF:** The user uploads a document.
 2. **Extract Text:** Text is extracted from the PDF.
 3. **Split into Chunks:** The extracted text is divided into smaller sections.
