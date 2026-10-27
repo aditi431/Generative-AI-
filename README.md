@@ -4,6 +4,10 @@ A beginner-friendly Generative AI project that allows users to upload a PDF, ext
 
 This project is being built step by step to understand how **Retrieval-Augmented Generation (RAG)** applications work from the ground up.
 
+## 🎥 Project Demo
+
+https://github.com/aditi431/Generative-AI-/issues/1#issue-6058779028
+
 > 🚧 **Project Status:** In Development — Day 1
 
 ## 🎯 Project Goal
