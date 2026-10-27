@@ -1,63 +1,74 @@
-# 📄 AI PDF Summarizer
+# AI PDF Summarizer & Q&A
 
-An AI-powered application that helps users understand lengthy PDF documents by generating concise summaries. It uses text extraction, intelligent text chunking, embeddings, and vector search to process documents and retrieve relevant information for summarization.
+An AI-powered application that helps users understand PDF documents without having to read every page manually. Users can upload a PDF, generate a summary, and ask questions about its content to get relevant answers based on the information available in the document.
 
-## ✨ Features
+## Features
 
-- **PDF Upload:** Upload PDF documents for processing.
-- **Text Extraction:** Extract readable text from PDF files.
-- **Smart Text Chunking:** Split long documents into smaller, manageable sections.
-- **Semantic Embeddings:** Convert text chunks into numerical representations to capture their meaning.
-- **Vector Search:** Use FAISS to find relevant document chunks efficiently.
-- **AI-Powered Summarization:** Generate concise summaries using Google Gemini.
-- **Modular Design:** Keep text processing, embeddings, vector storage, and AI operations organized into separate components.
+- **PDF Summarization:** Get a concise summary of an uploaded PDF.
+- **Question Answering:** Ask questions about the document and receive answers based on its content.
+- **Text Extraction:** Extract text from PDF documents for further processing.
+- **Text Chunking:** Split long documents into smaller sections for efficient retrieval.
+- **Semantic Search:** Find relevant information using text embeddings.
+- **Vector Search with FAISS:** Retrieve document sections related to a user's question.
+- **Gemini Integration:** Generate summaries and answers using Google's Gemini model.
+- **Interactive UI:** Upload documents and interact with them through a Streamlit application.
 
-## ⚙️ How It Works
+## Project Demo
 
-1. **Upload PDF:** The user provides a PDF document.
-2. **Extract Text:** Text is extracted from the uploaded document.
-3. **Split into Chunks:** The extracted text is divided into smaller sections for processing.
-4. **Generate Embeddings:** Text chunks are converted into embeddings using Sentence Transformers.
-5. **Store and Retrieve:** FAISS stores the vector representations and helps retrieve relevant chunks.
-6. **Generate Summary:** Google Gemini processes the relevant document content to produce a concise summary.
-7. **View Results:** The user can access the generated summary through the application interface.
+Watch the Project Demo on LinkedIn - https://lnkd.in/p/ggz4GfwV
 
-## 🎥 Project Demo
+## How It Works
 
-Watch the AI PDF Summarizer demonstration on LinkedIn: https://lnkd.in/p/ggz4GfwV
+The application follows a Retrieval-Augmented Generation (RAG) pipeline to answer questions using information from the uploaded PDF.
 
-## 🛠️ Tech Stack
+<escape>
+PDF Upload → Text Extraction → Text Chunking → Embeddings → FAISS Retrieval → Gemini LLM → Answer
+</escape>
+
+1. **Upload PDF:** The user uploads a document.
+2. **Extract Text:** Text is extracted from the PDF.
+3. **Split into Chunks:** The extracted text is divided into smaller sections.
+4. **Create Embeddings:** Text chunks are converted into numerical representations.
+5. **Retrieve Relevant Information:** FAISS searches for the chunks most relevant to the user's question.
+6. **Generate an Answer:** Gemini uses the retrieved information to generate a relevant response.
+
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
 | Python | Core application logic |
-| Streamlit | User interface |
-| PyPDF | PDF text extraction |
-| Google Gemini | AI-powered summarization |
+| Streamlit | Interactive user interface |
+| Google Gemini (`gemini-3.6-flash`) | AI-generated summaries and answers |
 | Sentence Transformers | Text embeddings |
-| FAISS | Vector storage and similarity search |
+| FAISS | Similarity search and information retrieval |
+| pypdf | PDF text extraction |
 
-## 📁 Project Structure
+## Example Use Case
 
-```text
-AI-PDF-Summarizer/
-├── app.py
-├── requirements.txt
-├── test_chunks.py
-└── utils/
-    ├── embeddings.py
-    ├── llm.py
-    ├── text_splitter.py
-    └── vector_store.py
-```
+A user uploads their resume and asks:
 
+**“What are the technical skills?”**
 
+The application retrieves the relevant information from the resume and provides an answer based on the document's content.
 
+The same approach can be used to explore research papers, study materials, reports, and other PDF documents.
 
-## 🎯 Project Objective
+## What I Learned
 
-The goal of this project is to make lengthy PDF documents easier to understand by combining document processing, semantic search, and generative AI. It demonstrates how different AI components can work together to turn unstructured document text into concise, useful information.
+Building this project gave me practical experience with:
 
----
+- PDF text extraction and preprocessing
+- Text chunking and embeddings
+- Semantic search and vector databases
+- Retrieval-Augmented Generation (RAG)
+- LLM integration and prompt engineering
+- Building interactive AI applications with Streamlit
+- Debugging errors and connecting different components into one working pipeline
 
-**Built with Python, Streamlit, and Generative AI.**
+## Project Demo
+
+[Watch the Project Demo on LinkedIn](https://lnkd.in/p/ggz4GfwV)
+
+## Future Scope
+
+I plan to explore more advanced RAG systems, improve answer quality, and build AI agents and LLM-powered applications that solve real-world problems.
